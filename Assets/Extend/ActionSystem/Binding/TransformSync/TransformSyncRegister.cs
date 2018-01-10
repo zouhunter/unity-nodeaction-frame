@@ -23,12 +23,7 @@ namespace WorldActionSystem.Binding
         {
             if(active && body && target)
             {
-#if UNITY_5_6_OR_NEWER
-                body.transform.SetPositionAndRotation(target.position, target.rotation);
-#else
-                body.transform.position = target.position;
-                body.transform.rotation = target.rotation;
-#endif
+                //body.transform.SetPositionAndRotation(target.position, target.rotation);
                 body.transform.localScale = target.localScale;
             }
         }

@@ -5,8 +5,6 @@ using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using Rotorz.ReorderableList;
-using Rotorz.ReorderableList.Internal;
 
 namespace WorldActionSystem
 {

@@ -322,11 +322,8 @@ namespace WorldActionSystem
         }
         public override void SetPosition(Vector3 pos)
         {
-#if UNITY_5_6_OR_NEWER
-            transform.SetPositionAndRotation(pos, target.rotation);
-#else
             transform.position = pos;
-#endif
+            //transform.SetPositionAndRotation(pos, transform.rotation);
         }
         /// <summary>
         /// 步骤激活（随机选中的一些installObj）
